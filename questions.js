@@ -6,7 +6,7 @@ questions =  [
     {"id": 4, "question": "I hornypost often", "effects": {"right": -1}},
     {"id": 5, "question": "I hornypost other discord members", "effects": {"right": -1}},
     {"id": 6, "question": "I hate hornyposters", "effects": {"right": 1}},
-    {"id": 7, "question": "", "effects": {"right": 1}},
-    {"id": 8, "question": "", "effects": {"right": -1}},
-    {"id": 9, "question": "", "effects": {"auth": -1}},
+    {"id": 7, "question": "Fourth is cute", "effects": {"right": -0.5}},
+    {"id": 8, "question": "Rushers is cute", "effects": {"right": -0.5}},
+    {"id": 9, "question": " is cute", "effects": {"right": -0.5}},
 ];
