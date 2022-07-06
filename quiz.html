@@ -14,7 +14,6 @@
 </head>
 
 <body>
-
 	<h1 class="title">vtPlaceValues</h1>
     <svg id="svgHeader" style="width: 100%;" viewBox="0 0 112 19">
 		<text x="50%" y="15" class="svgHeader">vtPlaceValues</text>
@@ -37,7 +36,6 @@
 
 
     // Populate questionsObject
-
     var questionsObject = new Object();     // Question objects with ID keys
     questions.forEach(populateQO);
 
@@ -47,7 +45,6 @@
 
 
     // Populate & shuffle questionsOrder
-
     var questionsOrder = Object.keys(questionsObject); //Array of shuffled question IDs
 
     const urlParams = new URLSearchParams(window.location.search);
@@ -63,15 +60,13 @@
     }
 
     // Question initialization
-
     init_question();
 
     function init_question() {
         $("#question-text").html(questionsObject[questionsOrder[qn]].question);
         $("#question-number").html("Question "+(qn + 1)+" of "+(questionsOrder.length));
 
-
-
+        
         if (jQuery.isEmptyObject(answers)) {
             $('#back_button').hide()
             $('#back_button_off').show()
@@ -83,7 +78,6 @@
 
 
     // Next question
-
     function next_question(answer) {
         if (qn === questionsOrder.length) {
             return;
@@ -101,7 +95,6 @@
 
 
     // Previous question
-
     function prev_question() {
         if (jQuery.isEmptyObject(answers)) {
             $('#back_button').hide()
@@ -117,9 +110,7 @@
 
 
     // RESULTS
-
     function results() {
-
         window.sessionStorage.answers = JSON.stringify(answers);
 
 
@@ -140,12 +131,10 @@
         }
         //return;
         location.href = ((window.location.hostname == "sapplyvalues.github.io") ? `feedback.html` : `results.html`) + args
-
     }
 
 
     // Calculate percentage
-
     function percentageCalculation() {
         // calc max
         var max = new Object(); // Max possible scores
@@ -172,7 +161,6 @@
         }
 
         // calc score
-
         for (const i in Object.keys(max)) {
             effectName = Object.keys(max)[i]
 
@@ -186,5 +174,4 @@
         return pct;
     }
 </script>
-
 </body>
