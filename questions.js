@@ -1,5 +1,4 @@
 questions =  [
-    //{"id": 0, "effects": {"auth": 10},              "question": "I am a server mod (pls put Neutral if you're not)"},
     {"id": 0, "effects": {"auth": 1, "right": -0.1},"question": "GLORY TO WERDZISTAN"},
     {"id": 1, "effects": {"auth": 1, "right": -1},  "question": "Werdz is best girl"},
     {"id": 2, "effects": {"auth": 1},               "question": "I rarely break server rules"},
@@ -12,4 +11,5 @@ questions =  [
     {"id": 9, "effects": {"right": -0.5},           "question": " is cute"},
     {"id": 10, "effects": {"auth": 1},              "question": "1984 is necesarry"},
     {"id": 11, "effects": {"auth": -0.5},           "question": "I inflict shame on other people"},
+    {"id": 12, "effects": {"auth": 1},              "question": "I am a server mod (pls put Neutral if you're not)"},
 ];
